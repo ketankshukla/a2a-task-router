@@ -1,0 +1,157 @@
+[
+  {
+    "name": "retrieval-agent",
+    "description": "Searches an indexed document corpus and returns passages with citations.",
+    "url": "https://agents.example.internal/retrieval",
+    "version": "1.2.0",
+    "skills": [
+      {
+        "skill_id": "search_corpus",
+        "name": "Search the corpus",
+        "description": "Find passages in the indexed documents that answer a question, and cite the source of each one.",
+        "examples": [
+          "what do our docs say about refund windows",
+          "find the section covering data retention",
+          "which page explains the onboarding steps",
+          "look up the policy on contractor access",
+          "search the handbook for parental leave",
+          "where is the deployment runbook",
+          "pull the paragraph about SLA credits",
+          "cite the source for the 90 day figure"
+        ]
+      },
+      {
+        "skill_id": "summarise_sources",
+        "name": "Summarise retrieved sources",
+        "description": "Condense several retrieved passages into one answer without introducing anything the sources do not say.",
+        "examples": [
+          "summarise what the docs say about backups",
+          "give me the gist of the security section",
+          "condense these three passages into one answer"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "code-review-agent",
+    "description": "Reviews diffs for correctness, security and maintainability.",
+    "url": "https://agents.example.internal/code-review",
+    "version": "2.0.1",
+    "skills": [
+      {
+        "skill_id": "review_diff",
+        "name": "Review a change",
+        "description": "Read a pull request or diff and report correctness bugs, security issues and maintainability problems.",
+        "examples": [
+          "review this pull request before I merge it",
+          "is there a race condition in this diff",
+          "check my changes for SQL injection",
+          "does this migration drop data",
+          "look over the new authentication middleware",
+          "what could break in this refactor",
+          "any memory leaks in this loop",
+          "should this function be idempotent"
+        ]
+      },
+      {
+        "skill_id": "suggest_tests",
+        "name": "Suggest tests",
+        "description": "Propose the test cases a change needs, especially the edge cases the author is likely to have missed.",
+        "examples": [
+          "what tests should I write for this parser",
+          "which edge cases am I missing here",
+          "suggest cases for the retry logic"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "billing-agent",
+    "description": "Answers questions about invoices, subscriptions, refunds and payment failures.",
+    "url": "https://agents.example.internal/billing",
+    "version": "3.4.0",
+    "skills": [
+      {
+        "skill_id": "explain_invoice",
+        "name": "Explain an invoice",
+        "description": "Break down what a customer was charged for and why the amount changed from last period.",
+        "examples": [
+          "why is my invoice higher this month",
+          "what is this line item on my bill",
+          "explain the proration on my last charge",
+          "I was charged twice for March",
+          "when does my subscription renew",
+          "how do I get a receipt for accounting",
+          "my card was declined, what now",
+          "can I switch to annual billing"
+        ]
+      },
+      {
+        "skill_id": "process_refund",
+        "name": "Process a refund",
+        "description": "Determine refund eligibility under the published policy and issue one where it applies.",
+        "examples": [
+          "I want a refund for last month",
+          "am I eligible for a partial refund",
+          "cancel and refund my unused period"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "incident-agent",
+    "description": "Triages production incidents from alerts, logs and error traces.",
+    "url": "https://agents.example.internal/incident",
+    "version": "1.9.3",
+    "skills": [
+      {
+        "skill_id": "triage_alert",
+        "name": "Triage an alert",
+        "description": "Assess an alert or error spike, work out blast radius, and decide whether to page a human.",
+        "examples": [
+          "error rate spiked at 3am, what happened",
+          "checkout is returning 500s in production",
+          "the queue depth alert is firing again",
+          "latency doubled after the last deploy",
+          "should we roll back this release",
+          "database connections are exhausted",
+          "which service started failing first",
+          "is this outage customer facing"
+        ]
+      },
+      {
+        "skill_id": "write_postmortem",
+        "name": "Draft a postmortem",
+        "description": "Assemble a timeline from logs and deploys into a blameless incident writeup with action items.",
+        "examples": [
+          "draft the postmortem for yesterday's outage",
+          "build a timeline of what happened",
+          "what were the contributing factors"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "scheduling-agent",
+    "description": "Finds meeting times, books rooms and manages calendar conflicts.",
+    "url": "https://agents.example.internal/scheduling",
+    "version": "1.0.4",
+    "skills": [
+      {
+        "skill_id": "find_time",
+        "name": "Find a meeting time",
+        "description": "Find a slot that works across several calendars and time zones, and book it.",
+        "examples": [
+          "find 30 minutes with the design team next week",
+          "when is everyone free on Thursday",
+          "move my 2pm to tomorrow morning",
+          "book a room for the retrospective",
+          "schedule a call across London and San Diego",
+          "do I have anything after 4 today",
+          "clear my calendar for Friday afternoon",
+          "reschedule the standup an hour later"
+        ]
+      }
+    ]
+  }
+]

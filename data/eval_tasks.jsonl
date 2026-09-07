@@ -1,0 +1,48 @@
+{"text": "dig up whatever the documentation has on how long we keep logs", "expected": "retrieval-agent"}
+{"text": "I need the exact wording of the cancellation clause from our terms", "expected": "retrieval-agent"}
+{"text": "which document covers what happens to data when an account closes", "expected": "retrieval-agent"}
+{"text": "quote me the passage that mentions two factor enforcement", "expected": "retrieval-agent"}
+{"text": "boil these retrieved chunks down to one paragraph and keep the citations", "expected": "retrieval-agent"}
+{"text": "is there anything written down about the escalation path", "expected": "retrieval-agent"}
+{"text": "find me the part of the spec that defines the retry envelope", "expected": "retrieval-agent"}
+{"text": "what does our own material claim about uptime guarantees", "expected": "retrieval-agent"}
+{"text": "take a look at branch feature/auth before it goes in", "expected": "code-review-agent"}
+{"text": "could this concurrent map write blow up under load", "expected": "code-review-agent"}
+{"text": "I think I introduced an N+1 query, can you confirm", "expected": "code-review-agent"}
+{"text": "does dropping this column lose anything we still read", "expected": "code-review-agent"}
+{"text": "audit the new session handling for anything exploitable", "expected": "code-review-agent"}
+{"text": "the rewrite passes tests but I do not trust it, second opinion", "expected": "code-review-agent"}
+{"text": "which boundary conditions does my date parser not handle", "expected": "code-review-agent"}
+{"text": "propose coverage for the exponential backoff path", "expected": "code-review-agent"}
+{"text": "my bill went up by forty dollars and nothing changed", "expected": "billing-agent"}
+{"text": "there are two identical charges on the same day", "expected": "billing-agent"}
+{"text": "what exactly is the seat adjustment line for", "expected": "billing-agent"}
+{"text": "payment keeps failing even with a new card", "expected": "billing-agent"}
+{"text": "I need a copy of last quarter's invoices for our accountant", "expected": "billing-agent"}
+{"text": "put me on yearly instead of monthly and tell me the difference", "expected": "billing-agent"}
+{"text": "give me my money back for the period I did not use", "expected": "billing-agent"}
+{"text": "do I qualify to get anything back if I cancel now", "expected": "billing-agent"}
+{"text": "something started throwing 502s about twenty minutes ago", "expected": "incident-agent"}
+{"text": "pager went off for the ingestion worker, is it serious", "expected": "incident-agent"}
+{"text": "response times tripled right after we shipped, related?", "expected": "incident-agent"}
+{"text": "we are out of connection pool slots in prod", "expected": "incident-agent"}
+{"text": "how many customers were affected by this morning's degradation", "expected": "incident-agent"}
+{"text": "do we revert the release or push forward with a fix", "expected": "incident-agent"}
+{"text": "put together the writeup for the outage with a timeline", "expected": "incident-agent"}
+{"text": "what actually caused the failure and what do we change", "expected": "incident-agent"}
+{"text": "get half an hour with the platform folks before Wednesday", "expected": "scheduling-agent"}
+{"text": "shift the sync to the afternoon, everyone is double booked", "expected": "scheduling-agent"}
+{"text": "is there a slot that works for both coasts", "expected": "scheduling-agent"}
+{"text": "grab a room for six people on Tuesday", "expected": "scheduling-agent"}
+{"text": "what does my afternoon look like", "expected": "scheduling-agent"}
+{"text": "push everything on Friday to next week", "expected": "scheduling-agent"}
+{"text": "line up a thirty minute intro between the two teams", "expected": "scheduling-agent"}
+{"text": "cancel my last meeting of the day", "expected": "scheduling-agent"}
+{"text": "what is the capital of Portugal", "expected": null}
+{"text": "write me a limerick about a badger", "expected": null}
+{"text": "how do I make sourdough starter from scratch", "expected": null}
+{"text": "translate this sentence into Japanese", "expected": null}
+{"text": "recommend a film for tonight", "expected": null}
+{"text": "what is the weather doing tomorrow", "expected": null}
+{"text": "convert 40 kilograms to stone", "expected": null}
+{"text": "who won the match last night", "expected": null}
