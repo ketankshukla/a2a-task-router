@@ -1,0 +1,45 @@
+{
+  "absent": [
+    "formatter configuration (tool defaults used)"
+  ],
+  "commit": "43c86332f55e3dee7335bf5e61223acbdf04136f",
+  "lint": {},
+  "recorded": "2026-10-12T06:28:04Z",
+  "roots": {
+    ".": {
+      "install": "pass",
+      "lockfile": "absent",
+      "malware": "pass",
+      "resolved": "2026-10-12",
+      "shape": "requirements",
+      "tests": "not run: owner declined",
+      "vuln": "pass"
+    }
+  },
+  "run": {
+    "env": {
+      "CI": "true"
+    },
+    "step_limit_seconds": 1800
+  },
+  "schema": 1,
+  "steps": {
+    "format": "fail",
+    "lint": "pass",
+    "secrets": "pass"
+  },
+  "tools": {
+    "format": {
+      "python": "ruff 0.16.8 (standard)"
+    },
+    "lint": {
+      "python": "ruff 0.16.8 (standard)"
+    }
+  },
+  "unformatted": [
+    "scripts/run_eval.py",
+    "src/a2a_task_router/evaluate.py",
+    "src/a2a_task_router/routers.py",
+    "tests/test_routing.py"
+  ]
+}
